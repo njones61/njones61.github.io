@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jones Geoscience, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jones Geoscience, LLC – specialized consulting in geotechnical and groundwater engineering.">
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --fg: #222;
+      --accent: #004b8d;
+      --accent-light: #e0edf7;
+      --card-bg: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 1.5rem 1rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.03em;
+    }
+    .brand p {
+      margin: 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    main {
+      margin-top: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: var(--card-bg);
+      padding: 1.5rem 1.5rem 1.25rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+      color: var(--accent);
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: linear-gradient(135deg, var(--accent-light), #ffffff);
+    }
+    .hero-title {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .hero-subtitle {
+      margin: 0.25rem 0 0.75rem;
+      font-size: 1rem;
+    }
+    .hero-list {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--accent-light);
+      font-size: 0.8rem;
+      margin-right: 0.4rem;
+      margin-top: 0.4rem;
+    }
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 1.5rem;
+    }
+    .service-list ul,
+    .about-list ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+    }
+    .service-list li,
+    .about-list li {
+      margin-bottom: 0.25rem;
+    }
+    .contact p {
+      margin: 0.25rem 0;
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 1.5rem 1rem 2rem;
+    }
+    @media (max-width: 720px) {
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <h1>Jones Geoscience, LLC</h1>
+        <p>Geotechnical &amp; groundwater engineering consulting</p>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="hero" id="top">
+        <h2 class="hero-title">Independent technical expertise for complex subsurface problems.</h2>
+        <p class="hero-subtitle">
+          Jones Geoscience, LLC provides analysis, review, and guidance on geotechnical and groundwater projects for
+          public agencies, consultants, and industry.
+        </p>
+        <ul class="hero-list">
+          <li>Numerical and analytical modeling to support design and decision-making</li>
+          <li>Independent checks, QA/QC review, and expert input on existing analyses</li>
+          <li>Clear, concise technical communication for engineers, managers, and stakeholders</li>
+        </ul>
+        <div>
+          <span class="pill">Slope stability</span>
+          <span class="pill">Seepage &amp; groundwater</span>
+          <span class="pill">Dam &amp; levee safety</span>
+          <span class="pill">Technical review</span>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2>Services</h2>
+        <div class="two-column service-list">
+          <div>
+            <ul>
+              <li>Slope stability analysis (circular and non-circular methods)</li>
+              <li>Seepage and groundwater flow modeling (2D/3D, steady/transient)</li>
+              <li>Evaluation of dam, levee, and embankment performance</li>
+              <li>Back-analysis of failures or performance issues</li>
+              <li>Technical review of third-party analyses and reports</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              Engagements can range from a brief independent check of existing work to full development of
+              analysis approaches and documentation for design teams, owners, and regulators.
+            </p>
+            <p>
+              Please reach out if you have a problem that does not fit neatly into the list above; many
+              projects involve a combination of these tools and concepts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="two-column about-list">
+          <div>
+            <p>
+              Jones Geoscience, LLC is led by Norman L. Jones, Ph.D., P.E. (if licensed in your jurisdiction).
+              Dr. Jones has extensive experience in geotechnical and groundwater engineering, including:
+            </p>
+            <ul>
+              <li>Development and application of numerical models for seepage and stability</li>
+              <li>Analysis of dams, levees, and earth structures</li>
+              <li>Research, publication, and teaching in geotechnical and groundwater topics</li>
+            </ul>
+          </div>
+          <div>
+            <p>
+              A detailed CV, selected publications, and project examples are available on request.
+              Engagements are tailored to the needs of each client, with clear scope and deliverables.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>
+          For inquiries about availability, scope, or potential engagements, please get in touch:
+        </p>
+        <p>
+          Email:
+          <a href="mailto:yourname@gmail.com">yourname@gmail.com</a>
+          <!-- Replace with norm@jonesgeo.com or similar if/when you set it up -->
+        </p>
+        <p>
+          Please include a brief description of your project, schedule constraints, and how you would like to be contacted.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Jones Geoscience, LLC. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
