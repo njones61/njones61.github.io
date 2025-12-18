@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Curriculum Vitae – Norman L. Jones, Ph.D.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Curriculum Vitae for Norman L. Jones, Ph.D. – Professor of Civil Engineering and Principal of Jones Geoscience, LLC">
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --fg: #222;
+      --accent: #004b8d;
+      --accent-light: #e0edf7;
+      --card-bg: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 1.5rem 1rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.03em;
+    }
+    .brand p {
+      margin: 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    main {
+      margin-top: 2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: var(--card-bg);
+      padding: 1.5rem 1.5rem 1.25rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.3rem;
+      color: var(--accent);
+      border-bottom: 2px solid var(--accent-light);
+      padding-bottom: 0.5rem;
+    }
+    section h3 {
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    .cv-hero {
+      background: linear-gradient(135deg, var(--accent-light), #ffffff);
+    }
+    .cv-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+      gap: 2rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid var(--accent-light);
+      font-size: 0.8rem;
+      margin-right: 0.4rem;
+      margin-top: 0.4rem;
+    }
+    .kv {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 0.5rem 1rem;
+      align-items: start;
+    }
+    .kv dt {
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .kv dd {
+      margin: 0;
+    }
+    .kv a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .kv a:hover {
+      text-decoration: underline;
+    }
+    .list-tight {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+    }
+    .list-tight li {
+      margin-bottom: 0.4rem;
+    }
+    .list-publications {
+      margin: 0.75rem 0 0;
+      padding-left: 1.25rem;
+      font-size: 0.95rem;
+    }
+    .list-publications li {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+    .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .highlight-box {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+    .highlight-box p {
+      margin: 0.25rem 0;
+    }
+    .cv-entry {
+      margin-bottom: 1.25rem;
+    }
+    .cv-entry:last-child {
+      margin-bottom: 0;
+    }
+    .cv-entry-title {
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 0.25rem;
+    }
+    .cv-entry-meta {
+      color: #555;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+    .cv-entry-desc {
+      margin-top: 0.5rem;
+    }
+    details {
+      border: 1px solid var(--accent-light);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      background: #fafbfc;
+      margin-top: 0.75rem;
+    }
+    details[open] {
+      padding-bottom: 1rem;
+    }
+    summary {
+      cursor: pointer;
+      color: var(--accent);
+      font-weight: 600;
+      user-select: none;
+    }
+    summary:hover {
+      opacity: 0.8;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      padding: 1.5rem 1rem 2rem;
+    }
+    @media (max-width: 720px) {
+      .cv-grid {
+        grid-template-columns: 1fr;
+      }
+      .kv {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="canonical" href="cv.html">
+  <meta name="robots" content="index,follow">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <h1>Jones Geoscience, LLC</h1>
+        <p>Groundwater &amp; geotechnical engineering consulting</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.html" aria-current="page">CV</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="cv-hero">
+        <div class="cv-grid">
+          <div>
+            <h1 style="margin:0 0 0.25rem; font-size:1.75rem">Norman L. Jones, Ph.D.</h1>
+            <p class="meta" style="margin:0.25rem 0 1rem">
+              Professor of Civil Engineering, Brigham Young University<br>
+              Principal, Jones Geoscience, LLC
+            </p>
+            <div>
+              <span class="pill">Hydroinformatics</span>
+              <span class="pill">Groundwater Modeling</span>
+              <span class="pill">GIS &amp; Remote Sensing</span>
+              <span class="pill">Decision Support Systems</span>
+              <span class="pill">Expert Testimony</span>
+            </div>
+          </div>
+          <div>
+            <dl class="kv">
+              <dt>Email</dt>
+              <dd><a href="mailto:njones61@gmail.com">njones61@gmail.com</a></dd>
+              <dt>Academic</dt>
+              <dd><a href="mailto:njones@byu.edu">njones@byu.edu</a></dd>
+              <dt>Location</dt>
+              <dd>Provo, Utah, USA</dd>
+              <dt>Phone</dt>
+              <dd>801-422-7569</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Professional Summary</h2>
+        <p>
+          Consulting engineer and academic researcher with 30+ years of experience in hydroinformatics,
+          computational groundwater modeling, and GIS applications in water resources. Specialized expertise
+          in developing and applying numerical models, web-based decision support systems, and integrating
+          advanced computational tools with remote sensing and machine learning for water resource challenges.
+          Extensive experience in litigation support, expert testimony, technical peer review, and clear
+          communication of complex technical concepts to engineering leaders, regulatory agencies, and stakeholders.
+        </p>
+        <div class="highlight-box">
+          <p><strong>Key Accomplishments:</strong></p>
+          <ul style="margin:0.5rem 0 0; padding-left:1.25rem">
+            <li>Directed development of Groundwater Modeling System (GMS), adopted by 8,000+ organizations in 100+ countries</li>
+            <li>Principal investigator or co-PI on 26 research projects totaling $22+ million in external funding</li>
+            <li>Published 96 peer-reviewed journal articles and 39 technical manuals and reports</li>
+            <li>Recipient of John Hem Award (NGWA), Karl G. Maeser Award (BYU), and Walter L. Huber Prize (ASCE)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-title">Ph.D., Geotechnical Engineering</div>
+          <div class="cv-entry-meta">University of Texas at Austin | December 1990</div>
+          <div class="cv-entry-desc">University Fellowship Recipient</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title">M.S., Geotechnical Engineering</div>
+          <div class="cv-entry-meta">University of Texas at Austin | May 1988</div>
+          <div class="cv-entry-desc">University Fellowship Recipient</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title">B.S., Civil Engineering</div>
+          <div class="cv-entry-meta">Brigham Young University | April 1986</div>
+          <div class="cv-entry-desc">Summa Cum Laude, Outstanding Civil Engineering Graduate</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Current Position &amp; Career Progression</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-title">Professor</div>
+          <div class="cv-entry-meta">Department of Civil and Construction Engineering, Brigham Young University | 2002–present</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title">Department Chair</div>
+          <div class="cv-entry-meta">Civil and Construction Engineering, Brigham Young University | 2018–2024</div>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-title">Principal</div>
+          <div class="cv-entry-meta">Jones Geoscience, LLC | Present</div>
+          <div class="cv-entry-desc">Independent consulting practice providing groundwater and geotechnical engineering expertise,
+          numerical modeling, litigation support, and technical peer review services.</div>
+        </div>
+
+        <h3 style="margin-top:1.5rem">Previous Academic Positions</h3>
+        <ul class="list-tight">
+          <li>Associate Professor, Brigham Young University (1997–2002)</li>
+          <li>Assistant Professor, Brigham Young University (1991–1996)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Major Awards &amp; Recognition</h2>
+        <ul class="list-tight">
+          <li><strong>2023:</strong> BYU Sponsored Research Award</li>
+          <li><strong>2021:</strong> John Hem Award for Science and Engineering (National Ground Water Association)</li>
+          <li><strong>2016:</strong> AWRA Educator of the Year (Utah Section)</li>
+          <li><strong>2012:</strong> Karl G. Maeser Research and Creative Arts Award (highest research award at BYU)</li>
+          <li><strong>2007:</strong> Utah Engineering Educator of the Year</li>
+          <li><strong>2003:</strong> Brigham Young University Technology Transfer Award</li>
+          <li><strong>2002:</strong> College of Engineering &amp; Technology Special Commendation Award</li>
+          <li><strong>2001:</strong> Walter L. Huber Civil Engineering Research Prize (American Society of Civil Engineers)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Areas of Expertise</h2>
+        <ul class="list-tight">
+          <li>Hydroinformatics and computational groundwater modeling</li>
+          <li>GIS integration with water resources applications and groundwater modeling</li>
+          <li>Remote sensing and Earth observation data for groundwater assessment</li>
+          <li>Machine learning applications in water resources and hydrologic forecasting</li>
+          <li>Web-based decision support systems and cloud-based water resource tools</li>
+          <li>Three-dimensional site characterization, geostatistics, and solid modeling</li>
+          <li>Numerical modeling with MODFLOW, MT3DMS, MODPATH, FEMWATER, SEEP2D, and related codes</li>
+          <li>Seepage and slope stability analysis; dam and levee safety assessment</li>
+          <li>Contaminant plume characterization and coupled reactive transport modeling</li>
+          <li>Watershed delineation using triangulated irregular networks</li>
+          <li>Expert witness testimony, litigation support, and technical peer review</li>
+          <li>Sustainable groundwater management in data-sparse regions</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Research Leadership</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-title">Hydroinformatics Laboratory</div>
+          <div class="cv-entry-meta">Brigham Young University | Current</div>
+          <div class="cv-entry-desc">
+            <p>Director of research laboratory focused on hydroinformatics, big data, GIS, and web-based decision support systems.
+            Collaborators include Jim Nelson and Dan Ames. Currently supervising approximately 25 graduate and undergraduate students
+            in research spanning machine learning for groundwater level prediction, Earth observation data integration, hydrologic
+            forecasting, and sustainable water management.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-title">Environmental Modeling Research Laboratory (EMRL)</div>
+          <div class="cv-entry-meta">Brigham Young University | Founded 1998</div>
+          <div class="cv-entry-desc">
+            <p>Founded and directed this laboratory which at its peak included 35 faculty, staff, and students with $1.2–1.5 million
+            annually in external funding. Primary sponsors included U.S. Army Corps of Engineers, EPA, DOE, FHWA, and NRC.
+            Successfully transitioned software development activities to Aquaveo, LLC in 2007, enabling continued commercial
+            support and development of groundwater modeling tools.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Software Development &amp; Technology Transfer</h2>
+
+        <div class="cv-entry">
+          <div class="cv-entry-title">Groundwater Modeling System (GMS)</div>
+          <div class="cv-entry-desc">
+            <p>Directed the development of GMS, a state-of-the-art three-dimensional modeling environment for groundwater applications.
+            GMS integrates site characterization tools, geostatistics, solid modeling, and interfaces to multiple groundwater models
+            including MODFLOW, MODPATH, MT3DMS, SEAM3D, RT3D, FEMWATER, SEEP2D, and ADH. The software has been adopted by over
+            8,000 organizations in more than 100 countries and has been described as "the most comprehensive and sophisticated
+            groundwater modeling software available."</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-title">Arc Hydro Groundwater Data Model</div>
+          <div class="cv-entry-desc">
+            <p>Co-developed Arc Hydro Groundwater, a comprehensive GIS-based data model and toolset for groundwater applications.
+            Published comprehensive reference manual through ESRI Press (2011). The system provides standardized approaches for
+            organizing, analyzing, and visualizing groundwater data within GIS environments.</p>
+          </div>
+        </div>
+
+        <div class="cv-entry">
+          <div class="cv-entry-title">Additional Modeling Tools &amp; Platforms</div>
+          <div class="cv-entry-desc">
+            <ul class="list-tight">
+              <li>Stratigraphic and stochastic modeling tools for uncertainty analysis</li>
+              <li>Generic model data formats and scripting/automation for hydrologic modeling</li>
+              <li>Web-based groundwater mapping and visualization tools using modern web technologies</li>
+              <li>Cloud-based decision support systems for water resource management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Teaching Experience</h2>
+
+        <h3>Courses Taught at Brigham Young University</h3>
+        <ul class="list-tight">
+          <li><strong>CE En 101:</strong> Introduction to Civil and Environmental Engineering</li>
+          <li><strong>CE En 201:</strong> Infrastructure</li>
+          <li><strong>CE En 270:</strong> Computer Methods in Civil Engineering</li>
+          <li><strong>CE En 341:</strong> Elementary Soil Mechanics</li>
+          <li><strong>CE En 540:</strong> Geo-Environmental Engineering</li>
+          <li><strong>CE En 544:</strong> Seepage and Slope Stability Analysis</li>
+          <li><strong>CE En 547:</strong> Ground Water Modeling</li>
+          <li><strong>CE En 641:</strong> Advanced Soil Mechanics</li>
+        </ul>
+
+        <h3>Seminars &amp; Short Courses</h3>
+        <p>
+          Delivered approximately 75 seminars and short courses nationally and internationally on groundwater modeling,
+          computational simulation, and GIS applications. International venues include China, Korea, Australia, and Germany.
+          Topics have included MODFLOW modeling, GMS software training, Arc Hydro Groundwater, web-based decision support
+          systems, and advanced modeling techniques.
+        </p>
+      </section>
+
+      <section>
+        <h2>Professional Service &amp; Leadership</h2>
+
+        <h3>Current Leadership Roles</h3>
+        <ul class="list-tight">
+          <li>Board Member, Tethys Geoscience Foundation</li>
+          <li>International Editorial Board, Journal of HydroInformatics</li>
+          <li>Editor, AQUAmundi Journal</li>
+          <li>Member, Great Salt Lake Basin Integrated Plan—Groundwater Technical Advisory Team</li>
+        </ul>
+
+        <h3>Previous Leadership &amp; Service</h3>
+        <ul class="list-tight">
+          <li>AWRA 2014 GIS in Water Resources Technical Program Chair</li>
+          <li>Department Chair, Civil and Construction Engineering, BYU (2018–2024)</li>
+        </ul>
+
+        <h3>Professional Memberships</h3>
+        <ul class="list-tight">
+          <li>American Geophysical Union</li>
+          <li>National Ground Water Association (NGWA Groundwater Modeling Interest Group)</li>
+          <li>American Society of Civil Engineers (EWRI Groundwater Management &amp; Emerging Technologies Committees)</li>
+          <li>American Water Resources Association</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>External Research Grants</h2>
+        <p>
+          Principal investigator or co-principal investigator on 26 externally funded research projects totaling
+          <strong>$22,026,639</strong>. Major sponsors include NSF, NOAA, NASA, USGS, U.S. Army Corps of Engineers,
+          EPA, DOE, FHWA, and NRC.
+        </p>
+
+        <details open>
+          <summary>Show All External Research Grants</summary>
+          <ol class="list-publications">
+            <li><strong>Automated Mesh Generation For the TABS-2 System</strong>, $19,000, February 1990–November 1990. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>A Geometry Pre-Processor for HEC-1 Employing Triangulated Irregular Networks</strong>, $20,048, March 1991–October 1991. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Real-Time Visualization for the TABS-2 Modelling System</strong>, $14,123, April 1991–August 1991. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>An Investigation of X-Windows Interface Tools</strong>, $49,556, January 1992–August 1992. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Descriptive Geometry and Solid Rendering</strong>, $24,000, January 1992–October 1992. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>An Investigation of Automated Pre-processing Schemes for TIN-Based Drainage Analysis</strong>, $34,750, April 1992–October 1992. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>A Comprehensive Graphical User Environment for Groundwater Flow and Transport Modeling</strong>, $246,526, June 1993–September 1994. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>An Integrated Surface Flow Modeling System</strong>, $131,848, January 1994–January 1995. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Productivity and Management Tools for Groundwater Flow and Transport Modeling</strong>, $207,404, May 1994–April 1995. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Enhanced Tools for Quality Control in Automated Groundwater Transport Modeling</strong>, $246,553, January 1995–December 1995. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Visualization for Two-Dimensional Surface Runoff Modeling</strong>, $98,221, January 1995–October 1995. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Visualization Tools for Two-Dimensional Finite Element Hydrologic Modeling</strong>, $93,933, November 1995–October 1996. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>A Conceptual Modeling Approach to Pre-processing of Groundwater Models</strong>, $475,743, November 1995–November 1997. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>A Graphical Environment for Multi-Dimensional Surface Water Modeling</strong>, $49,789, March 1996–September 1996. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Hydrosystems Modeling</strong>, $2,458,083, May 1997–April 2002. U.S. Army Engineer Waterways Experiment Station.</li>
+
+            <li><strong>Second Generation Hydroinformatics Research</strong>, $4,958,127. U.S. Army Engineer Research and Development Center.</li>
+
+            <li><strong>Flux Calculations and 3D Visualization for the SCAPS Piezocone and GeoViz System</strong>, $34,931. U.S. Navy.</li>
+
+            <li><strong>Development of modeling methods and tools for predicting coupled reactive transport processes in porous media under multiple scales</strong>, $949,000. US Department of Energy. January 2007–December 2009.</li>
+
+            <li><strong>CI-WATER: Cyberinfrastructure to Advance High Performance Water Resource Modeling</strong>, $3,435,873. National Science Foundation - EPSCoR. September 2011–August 2014.</li>
+
+            <li><strong>Comprehensive Streamflow Prediction and Visualization to Support Integrated Water Management</strong>, $599,823. NASA SERVIR. August 2016–August 2019.</li>
+
+            <li><strong>An AmeriGEOSS Cloud-based Platform for Rapid Deployment of GEOGLOWS Water and Food Security Decision Support Apps</strong>, $540,658. NASA GEO. January 2018–December 2020. Daniel P. Ames, E. James Nelson, Norman L. Jones (Co-PIs).</li>
+
+            <li><strong>Geospatial Information Tools That Use Machine-Learning to Enable Sustainable Groundwater Management in West Africa</strong>, $657,232. NASA SERVIR. November 2019–November 2022.</li>
+
+            <li><strong>Advancing the NASA GEOGloWS Toolbox for Regional Water Resources Management and Decision Support</strong>, $1.2 million. NASA GEOGLOWS. 2022–2025. Dan Ames, Jim Nelson, Gus Williams, Norm Jones.</li>
+
+            <li><strong>CIROH: National Cyberinfrastructure Framework for Engaging the Hydrologic Community (NCF)</strong>, $1,822,418. National Oceanographic and Atmospheric Administration. 2022–2025. Dan Ames, Jim Nelson, Gus Williams, Norm Jones.</li>
+
+            <li><strong>CIROH: Advancing Science to Better Characterize Drought and Groundwater-Driven Low-Flow Conditions in NOAA and USGS National-Scale Models</strong>, $801,221. 2023–2025. Norm Jones, Gus Williams, T. Prabhakar Clement, Donna Rizzo.</li>
+
+            <li><strong>Improved Hydrologic Prediction Services for Resilience with GEOGLOWS</strong>, $1,889,627. National Oceanic and Atmospheric Administration (NOAA). April 1, 2024–March 31, 2027. Norm Jones, Jim Nelson, Andrew South.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section>
+        <h2>Peer-Reviewed Journal Publications</h2>
+        <p>
+          Author or co-author of <strong>96 peer-reviewed journal articles</strong> (1990–2025) in leading journals including
+          <em>Water Resources Research</em>, <em>Groundwater</em>, <em>Journal of Hydrology</em>, <em>Environmental Modelling &amp; Software</em>,
+          <em>Computers &amp; Geosciences</em>, <em>Remote Sensing</em>, <em>Hydrology</em>, and <em>Journal of the American Water Resources Association</em>.
+        </p>
+
+        <details open>
+          <summary>Show All Peer-Reviewed Publications</summary>
+          <ol class="list-publications">
+            <li>Jones, Norman L., Stephen G. Wright, and David R. Maidment, "Watershed delineation with triangle-based terrain models," <em>ASCE Journal of Hydraulic Engineering</em>, October, 1990, pp. 1232-1251.</li>
+
+            <li>Jones, Norman L. and Stephen G. Wright, "Algorithm for smoothing triangulated surfaces," <em>ASCE Journal of Computing in Civil Engineering</em>, January, 1991, pp. 85-102.</li>
+
+            <li>Jones, Norman L. and Stephen G. Wright, "Solid modeling for site representation in geotechnical engineering," <em>Geotechnical Engineering Congress</em>, June, 1991, pp. 1021-1031.</li>
+
+            <li>Richards, D.R., Norman L. Jones, H. C. Lin, "Graphical innovations in surface water flow analysis," <em>First International Conference on Integrating Geographic Information Systems and Environmental Modelling</em>, Sept. 15-19, 1991, Boulder, Colorado.</li>
+
+            <li>Jones, Norman L. and D.R. Richards, "Mesh generation for estuarine flow modelling," <em>ASCE Journal of Waterway, Port, and Coastal Engineering</em>, Vol. 118, No. 6, November/December, 1992, pp. 599-614.</li>
+
+            <li>Jones, Norman L. and Stephen G. Wright, "Subsurface characterization with solid models," <em>ASCE Geotechnical Engineering Journal</em>, Vol. 119, No. 11, November, 1993, pp. 1823-1839.</li>
+
+            <li>Nelson, James, Norman L. Jones, and A. Woodruff Miller, "Integrated hydrologic simulation with TINs," <em>Advances in Hydroscience and Engineering</em>, Volume 1, Sam S.Y. Wang, Ed., Proceedings of the First International Conference on Hydro-Science and Engineering, Washington, D.C., June 7-11, 1993, pp. 571-578.</li>
+
+            <li>Jones, Norman L., and Takafumi Saito, "Flow animation techniques for two-dimensional hydrodynamic modeling," <em>Advances in Hydroscience and Engineering</em>, Volume 1, Sam S.Y. Wang, Ed., Proceedings of the First International Conference on Hydro-Science and Engineering, Washington, D.C., June 7-11, 1993, pp. 2091-2096.</li>
+
+            <li>Jones, Norman L., and E. J. Nelson, "Construction of TINs from borehole data," <em>Advances in Site Characterization: Data Acquisition, Data Management, and Data Interpretation</em>, ASCE Geotechnical Publication No. 37, 1993, pp. 13-26.</li>
+
+            <li>Nelson, J. E., Norman L. Jones, and A. Woodruff Miller, "An algorithm for precise drainage basin delineation," <em>ASCE Journal of Hydraulic Engineering</em>, Vol. 120, No. 3, March, 1994, pp. 298-312.</li>
+
+            <li>Jones, Norman L., and D. R. Richards, "A comprehensive modeling environment," <em>Proceedings of the First International Conference on HYDROINFORMATICS</em>, Delft, the Netherlands, Sept. 19-23, 1994, pp. 317-322.</li>
+
+            <li>Nelson, E. J., and Norman L. Jones, "Reducing roundoff error in digital elevation data," <em>Journal of Hydrology</em>, Vol. 169, 1995, pp. 37-49.</li>
+
+            <li>Jones, Norman L., S. J. Owen, and E. C. Perry, "Plume characterization with natural neighbor interpolation," <em>GEOENVIRONMENT 2000</em>, ASCE Geotechnical Special Publication No 46, 1995, pp. 331-345.</li>
+
+            <li>James Nelson, A. Woodruff Miller, and Norman L. Jones, "A TIN based watershed delineation technique for both rural and urban runoff," <em>Water in the 21st Century: Conservation, Demand, and Supply</em>, American Water Resources Assocation, Salt Lake City, Utah, April 1995, pp. 643-652.</li>
+
+            <li>Owen, Steven J., Norman L. Jones, and Jeffrey P. Holland, "A comprehensive modeling environment for the simulation of groundwater flow and transport," <em>Engineering With Computers</em>, Dec., 1996, pp. 235-242.</li>
+
+            <li>Jones, Norman L., and R. J. Davis, "Three-Dimensional Characterization of Contaminant Plumes," <em>1996 Meeting of the Transportation Research Board</em>, Washington, D.C., January 7-11, 1996.</li>
+
+            <li>Alan K. Zundel, and Norman L. Jones, "An integrated surface water modeling system," <em>Proceedings of the Second International Conference on HYDROINFORMATICS</em>, Zurich, Switzerland, Sept. 9-13, 1996.</li>
+
+            <li>Norman L. Jones, and David R. Richards, "A conceptual model approach to hydroinformatics," <em>Proceedings of the Second International Conference on HYDROINFORMATICS</em>, Zurich, Switzerland, Sept. 9-13, 1996.</li>
+
+            <li>David R. Richards, and Norman L. Jones, "A blueprint for hydroinformatic design of US Army hydrologic models," <em>Proceedings of the Second International Conference on HYDROINFORMATICS</em>, Zurich, Switzerland, Sept. 9-13, 1996.</li>
+
+            <li>Jones, Norman L., E.V. Edris, Jr., and M.J. Kennard, "Three-dimensional characterization of contaminant plumes using cone penetrometer data," <em>Proceedings of the Second International Conference on Environmental Geotechnics, IS-Osaka '96</em>, Nov. 5-8, 1996, Osaka, Japan.</li>
+
+            <li>Staten, Matthew L., and Norman L. Jones, "Local Refinement of Three-Dimensional Finite Element Meshes," <em>Engineering With Computers</em>, 1997, Vol. 13, pp. 165-174.</li>
+
+            <li>Jones, Norman L., E.V. Edris, Jr., "Calibration tools for hydroinformatics systems," <em>Proceedings of the Third International Conference on HYDROINFORMATICS</em>, Copenhagen, Denmark, Aug. 24-26, 1998.</li>
+
+            <li>Zundel, A.K., Demirbilek, Z., Fugal, A.L., N.L. Jones, "Automatic definition of two-dimensional finite element coastal models," <em>Proceedings of the Third International Conference on HYDROINFORMATICS</em>, Copenhagen, Denmark, Aug. 24-26, 1998.</li>
+
+            <li>Nelson, E.J., N.L. Jones, R.J. Berrett, "Adaptive tessellation method for creating TINs from GIS data," <em>ASCE Journal of Hydrologic Engineering</em>, Vol. 4, No. 1, January, 1999.</li>
+
+            <li>Jones, Norman L., A.M. Lemon, C. Talbot, "Integrating GIS Data with 3D Finite Element Groundwater Models," <em>Proceedings of the International Symposium 2000 on Groundwater IAHR</em>, Saitama, Japan, May 8-10, 2000.</li>
+
+            <li>Jones, Norman L., Michael J. Kennard, Alan K. Zundel, "Fast algorithm for generating sorted contour strings," <em>Computers and Geosciences</em>, Vol. 26, pp. 831-837, 2000.</li>
+
+            <li>Jones, Norman L., E. James Nelson and Colby T. Manwaring, "Managing temporal data in a comprehensive modeling environment," <em>Journal of Hydroinformatics</em>, Vol. 2, No. 2, pp. 105-112, 2000.</li>
+
+            <li>Jones, Norman L., Alan M. Lemon, and Fred T. Tracy, "A hybrid approach to flow net generation," <em>International Journal of Numerical and Analytical Methods in Geomechanics</em>, Vol. 25, pp. 1339-1349, Sept. 2001.</li>
+
+            <li>Jones, Norman L., Trevor J. Budge, Alan K. Zundel, Alan M. Lemon, "Generating MODFLOW grids from boundary-representation solid models," <em>Ground Water</em>, Vol. 40, No. 2, March-April 2002, pp. 194-200.</li>
+
+            <li>Jones, Norman L., R.J. Davis, W. Sabbah, "A comparison of 3D interpolation techniques for plume characterization," <em>Ground Water</em>, Vol. 41, No. 4, July-August 2003, pp. 411-419.</li>
+
+            <li>Lemon, A.M., N.L. Jones, "Building solid models from boreholes and user-defined cross-sections," <em>Computers and Geosciences</em>, Vol. 29, No. 5, June, 2003, pp. 547-555.</li>
+
+            <li>Jones, N.L., 2002, "Using transition probability geostatistics with MODFLOW," <em>Calibration and Reliability in Groundwater Modelling: A Few Steps Closer to Reality (Proceedings of ModelCARE'2002, Prague, Czech Republic, 17–20 June 2002)</em>. IAHS Publ. no. 277, pp. 359–364.</li>
+
+            <li>Jones, N.L., J.I. Green, and J.R. Walker, "Stochastic inverse modeling for capture zone analysis," <em>Groundwater Quality Modeling and Management Under Uncertainty, Proceedings of the Symposium, EWRI Congress, June 23-26, 2003, Philadelphia, Pa.</em>, Srikanta Mishra, Ed., American Society of Civil Engineers, pp. 1-12.</li>
+
+            <li>Jones, Norman L., J.R. Walker, & S.F. Carle, "Hydrogeologic unit flow characterization using transition probability geostatistics," <em>Ground Water</em>, Vol. 43, No. 2, Mar-Apr 2005, pp. 285-289.</li>
+
+            <li>Wallace, R.M., A. Byrd, C. Butler, N. Jones, R. Jones, "Generic Model Data Format", <em>Proceedings of the European Simulation Interoperability Workshop 2005</em>, Toulouse France. June. (document # 05E-SIW-046).</li>
+
+            <li>Jones, Norman L., T.P. Clement, C.H. Hansen, "A Three-Dimensional Analytical Modeling System for Risk Assessment at Chlorinated Solvent Sites," <em>Ground Water</em>, Vol. 44, No. 5, July-August 2006, pp. 613-617.</li>
+
+            <li>R. Wallace, K. Pathak, J. P. Holland, D. Stuart, C. Butler, D. R. Richards, M. Fife, N. L. Jones and J. Harris, "Information infrastructure for integrated ecohydraulic and water resources modeling and assessment", <em>Journal of Hydroinformatics</em>, Vol. 8, No. 4, 2006, pp. 317-333.</li>
+
+            <li>Strasberg G., D.R. Maidment, N.L. Jones, "A geographic data model for representing ground water systems," <em>Ground Water</em>, Vol. 45, No. 4, July-August 2007, pp. 515-518.</li>
+
+            <li>Jones N.L., and G. Strassberg, "The Arc Hydro MODFLOW data model", <em>Water Resources Impact</em>, Vol. 10, Num 1, January 2008, pp. 17-19.</li>
+
+            <li>Williams, G, N. Jones, T. Winkel, A. Mayo, 2008, "Field description and multi-phase modeling of a naturally occurring inverted density groundwater interface," <em>Proceedings of the American Society of Civil Engineers (ASCE) Environmental and Water Resources Institute</em>, May 2008, Honolulu, HI.</li>
+
+            <li>Williams, G, N. Jones, T. Winkel, A. Mayo, 2008, "Field measurements and an osmotic conceptual model of a steady-state groundwater pressure ridge," <em>Proceedings of the American Society of Civil Engineers (ASCE) Environmental and Water Resources Institute</em>, May 2008, Honolulu, HI.</li>
+
+            <li>Jones N.L., J.R. Handy, R.M. Wallace, "Levee Analyst: A GIS-based levee modeling and management system," <em>Proceedings of the Association of State Dam Safety Officials Annual Conference 2008</em>, September 7-11, Indian Wells, California.</li>
+
+            <li>Gustavious P. Williams, Norman Jones, and Jeffrey Handy, "A Heuristic Algorithm for Optimal Alignment and Matching of Borehole Stratigraphy", <em>Proceedings of the ASCE Environmental and Water Resources Institute 2008 Conference</em>, Kansas City, Kansas, May 2009.</li>
+
+            <li>Jones, N., Lemon, A, Patton, R., "Automated well permitting in a coastal region using SEAWAT and ArcGIS", <em>SWIM21 - 21st Salt Water Intrusion Meeting</em>, Azores, Portugal, June 21-26, 2010, pp. 187-190.</li>
+
+            <li>Strassberg, G., Jones, N., "Arc Hydro Groundwater Data Model and Tools: Overview and Use Cases," <em>AQUA mundi</em>, Vol. 1, No. 2, December 2010, pp. 101-114.</li>
+
+            <li>Jones, N.L., M. Smilowitz, and D. Whitehead, "The Sacramento Regional Groundwater Model", <em>World Environmental & Water Resources Congress 2011</em>, May 22-26, Palm Springs, CA.</li>
+
+            <li>Jones, N., Wallace, R., Jones, R., Butler, C., Zundel, A. "Efficient Application Programming Interface for Multi-Dimensional Modeling Data", <em>Journal of Hydroinformatics</em>, Vol. 14, No 1., 2012, pp. 1-12.</li>
+
+            <li>Whiteaker, T., N. Jones, G. Strassberg, A. Lemon, D. Gallup, "GIS-based Data Model and Tools for Creating and Managing Two-Dimensional Cross Sections," <em>Computers and Geosciences</em>, Vol 29, Feb 2012.</li>
+
+            <li>Christensen, Scott D., Michael Burns, Gil Strassberg, and Norman L. Jones. "A Web-Based Groundwater Mapping and Visualization Tool Using Google Earth." <em>World Environmental & Water Resources Congress</em>, Duke Energy Convention Center, Cincinnati, OH, 2013.</li>
+
+            <li>Jones, Norman L., E. James Nelson, Gustavious P. Williams, Fred Ogden, David Tarboton, Steve Burian. "CI-WATER: Cyberinfrastructure to Advance High Performance Water Resource Modeling." <em>World Environmental & Water Resources Congress</em>, Duke Energy Convention Center, Cincinnati, OH, 2013.</li>
+
+            <li>Latu, Kilisimasi, Nathan R. Swain, Scott D. Christensen, Norman L. Jones, James E. Nelson, and Gustavious P. Williams. "Essential GIS Technologies for Hydrologic Simulation Applications in Cloud Computing." <em>World Environmental & Water Resources Congress</em>, Duke Energy Convention Center, Cincinnati, OH, 2013.</li>
+
+            <li>Swain, N. R., Christensen, S. D., Latu, K., Jones, N. L., Nelson, E. J., & Williams, G. P. (2013). "A Geospatial Relational Data Model for Ingesting GSSHA Computational Models: A Step Toward Two-Dimensional Hydrologic Modeling in the Cloud." <em>World Environmental and Water Resources Congress 2013</em>, 2716–2725. <a href="https://doi.org/10.1061/9780784412947.269" target="_blank">https://doi.org/10.1061/9780784412947.269</a></li>
+
+            <li>Jones, N. L., Lemon, A. M. and Kennard, M. J. (2013), "Efficient Storage of Large MODFLOW Models." <em>Ground Water</em>. <a href="https://doi.org/10.1111/gwat.12060" target="_blank">https://doi.org/10.1111/gwat.12060</a></li>
+
+            <li>Jones, N., Nelson, J., Swain, N., Christensen, S., Tarboton, D. "Tethys: A Software Framework for Web-Based Modeling and Decision Support Applications." In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), <em>Proceedings of the 7th International Congress on Environmental Modelling and Software</em>, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2</li>
+
+            <li>Jones, N., Griffiths, T., Lemon, A., Kudlas, S. "Automated Well Permitting in Virginia's Coastal Plain Using SEAWAT and GIS Geoprocessing Tools." In: Ames, D.P., Quinn, N.W.T., Rizzoli, A.E. (Eds.), <em>Proceedings of the 7th International Congress on Environmental Modelling and Software</em>, June 15-19, San Diego, California, USA. ISBN: 978-88-9035-744-2</li>
+
+            <li>Y. Fan, S. Richard, R. S. Bristol, S. E. Peters, S. E. Ingebritsen, N. Moosdorf, A. Packman, T. Gleeson, I. Zaslavsky, S. Peckham, L. Murdoch, M. Fienen, M. Cardiff, D. Tarboton, N. Jones, R. Hooper, J. Arrigo, D. Gochis, J. Olson and D. Wolock (2014), "DigitalCrust – a 4D data system of material properties for transforming research on crustal fluid flow," <em>GeoFluids</em>, Article first published online: 7 OCT 2014. <a href="https://doi.org/10.1111/gfl.12114" target="_blank">https://doi.org/10.1111/gfl.12114</a></li>
+
+            <li>Swain, N.R., K. Latu, S.D. Christensen, N.L. Jones, E.J. Nelson, D.P. Ames, G.P. Williams (2015). "A review of open source software solutions for developing water resources web applications." <em>Environmental Modeling & Software</em> 67: 108-117.</li>
+
+            <li>Jones, David, Norm Jones, James Greer, and Jim Nelson, "A cloud-based MODFLOW service for aquifer management decision support," <em>Computers and GeoSciences</em>, Vol. 78, pp. 81-87, 2015.</li>
+
+            <li>Dolder, H., Jones, N., and Nelson, E. (2015). "Simple Method for Using Precomputed Hydrologic Models in Flood Forecasting with Uniform Rainfall and Soil Moisture Pattern." <em>J. Hydrol. Eng.</em> <a href="https://doi.org/10.1061/(ASCE)HE.1943-5584.0001232" target="_blank">https://doi.org/10.1061/(ASCE)HE.1943-5584.0001232</a></li>
+
+            <li>Fatichi, S., Vivoni, E.R., Ogden, F.L., Ivanov, V.Y., Mirus, B., Gochis, D., Downer, C.W., Camporese, M., Davidson, J.H., Ebel, B., Jones, N., Kim, J., Mascaro, G., Niswonger, R., Restrepo, P., Rigon, R., Shen, C., Sulis, M., and Tarboton, D. (2016). "An Overview of Challenges, Current Applications and Future Trends of Distributed Process-based Models in Hydrology." <em>Journal of Hydrology</em>. Vol 537, 45-60. <a href="https://doi.org/10.1016/j.jhydrol.2016.03.026" target="_blank">https://doi.org/10.1016/j.jhydrol.2016.03.026</a></li>
+
+            <li>Snow, Alan D., Scott D. Christensen, Nathan R. Swain, E. James Nelson, Daniel P. Ames, Norman L. Jones, Deng Ding, Nawajish S. Noman, Cédric H. David, Florian Pappenberger, and Ervin Zsoter, 2016. "A High-Resolution National-Scale Hydrologic Forecast System from a Global Ensemble Land Surface Model." <em>Journal of the American Water Resources Association (JAWRA)</em> 52(4):950–964. <a href="https://doi.org/10.1111/1752-1688.11059" target="_blank">https://doi.org/10.1111/1752-1688.11059</a></li>
+
+            <li>Perez, J. Fidel, Nathan R. Swain, Herman G. Dolder, Scott D. Christensen, Alan D. Snow, E. James Nelson, and Norman L. Jones, 2016. "From Global to Local: Providing Actionable Flood Forecast Information in a Cloud-Based Computing Environment." <em>Journal of the American Water Resources Association (JAWRA)</em> 52(4):965–978. <a href="https://doi.org/10.1111/1752-1688.12392" target="_blank">https://doi.org/10.1111/1752-1688.12392</a></li>
+
+            <li>Swain, N. R., S. D. Christensen, A. D. Snow, H. Dolder, G. Espinoza-Dávalos, E. Goharian, N. L. Jones, E. J. Nelson, D. P. Ames and S. J. Burian (2016). "A new open source platform for lowering the barrier for environmental web app development." <em>Environmental Modelling & Software</em> 85: 11-26.</li>
+
+            <li>Souffront Alcantara, Michael A.; Crawley, Shawn; Stealey, Michael J.; Nelson, E. James; Ames, Daniel P.; and Jones, Norm L. (2017) "Open Water Data Solutions for Accessing the National Water Model," <em>Open Water Journal</em>: Vol. 4 : Iss. 1 , Article 3.</li>
+
+            <li>Souffront Alcantara, Michael, C Kesler, M Stealey, J Nelson, D Ames, N Jones, 2017. "Cyberinfrastructure and Web Apps for Managing and Disseminating the National Water Model," <em>JAWRA Journal of the American Water Resources Association</em> 54, no. 4 (2018): 859-871.</li>
+
+            <li>Christensen, Scott D., Nathan R. Swain, Norman L. Jones, E. James Nelson, Alan D. Snow, and Herman G. Dolder. "A Comprehensive Python Toolkit for Accessing High-Throughput Computing to Support Large Hydrologic Modeling Tasks." <em>JAWRA Journal of the American Water Resources Association</em> 53, no. 2 (2017): 333-343.</li>
+
+            <li>Nelson, E. J., Pulla, S. T., Matin, M. A., Shakya, K., Jones, N., Ames, D. P., Ellenberg, W.L., Markert, K.N., Hales, R. (2019). "Enabling Stakeholder Decision-Making With Earth Observation and Modeling Data Using Tethys Platform." <em>Frontiers in Environmental Science</em>, 7. <a href="https://doi.org/10.3389/fenvs.2019.00148" target="_blank">https://doi.org/10.3389/fenvs.2019.00148</a></li>
+
+            <li>Purdy, A. J., David, C. H., Sikder, M. S., Reager, J. T., Chandanpurkar, H. A., Jones, N. L., & Matin, M. A. (2019). "An Open-Source Tool to Facilitate the Processing of GRACE Observations and GLDAS Outputs: An Evaluation in Bangladesh." <em>Frontiers in Environmental Science</em>, 7. <a href="https://doi.org/10.3389/fenvs.2019.00155" target="_blank">https://doi.org/10.3389/fenvs.2019.00155</a></li>
+
+            <li>Souffront Alcantara, M. A., Nelson, E. J., Shakya, K., Edwards, C., Roberts, W., Krewson, C., Ames, D. P., Jones, N. L., Gutierrez, A. (2019). "Hydrologic Modeling as a Service (HMaaS): A New Approach to Address Hydroinformatic Challenges in Developing Countries." <em>Frontiers in Environmental Science</em>, 7. <a href="https://doi.org/10.3389/fenvs.2019.00158" target="_blank">https://doi.org/10.3389/fenvs.2019.00158</a></li>
+
+            <li>Evans, S.; Williams, G.P.; Jones, N.L.; Ames, D.P.; Nelson, E.J. "Exploiting Earth Observation Data to Impute Groundwater Level Measurements with an Extreme Learning Machine." <em>Remote Sens.</em> 2020, 12, 2044. <a href="https://doi.org/10.3390/rs12122044" target="_blank">https://doi.org/10.3390/rs12122044</a></li>
+
+            <li>Evans, S.W.; Jones, N.L.; Williams, G.P.; Ames, D.P.; Nelson, E.J. (2020). "Groundwater Level Mapping Tool: An open source web application for assessing groundwater sustainability." <em>Environmental Modeling and Software</em>, Vol 131, September 2020. <a href="https://doi.org/10.1016/j.envsoft.2020.104782" target="_blank">https://doi.org/10.1016/j.envsoft.2020.104782</a></li>
+
+            <li>Nelson, S. T., Robinson, S., Rey, K., Brown, L., Jones, N., Dawrs, S. N., et al. (2021). "Exposure Pathways of Nontuberculous Mycobacteria Through Soil, Streams, and Groundwater, Hawai'i, USA." <em>GeoHealth</em>, 5, e2020GH000350. <a href="https://doi.org/10.1029/2020GH000350" target="_blank">https://doi.org/10.1029/2020GH000350</a></li>
+
+            <li>Sanchez Lozano J, Romero Bustamante G, Hales R, Nelson EJ, Williams GP, Ames DP, Jones NL. "A Streamflow Bias Correction and Performance Evaluation Web Application for GEOGloWS ECMWF Streamflow Services." <em>Hydrology</em>. 2021; 8(2):71. <a href="https://doi.org/10.3390/hydrology8020071" target="_blank">https://doi.org/10.3390/hydrology8020071</a></li>
+
+            <li>Dolder, Danisa; Williams, Gustavious P.; Miller, A. W.; Nelson, Everett J.; Jones, Norman L.; Ames, Daniel P. 2021. "Introducing an Open-Source Regional Water Quality Data Viewer Tool to Support Research Data Access" <em>Hydrology</em> 8, no. 2: 91. <a href="https://doi.org/10.3390/hydrology8020091" target="_blank">https://doi.org/10.3390/hydrology8020091</a></li>
+
+            <li>Bustamante, G.R.; Nelson, E.J.; Ames, D.P.; Williams, G.P.; Jones, N.L.; Boldrini, E.; Chernov, I.; Sanchez Lozano, J.L. "Water Data Explorer: An Open-Source Web Application and Python Library for Water Resources Data Discovery." <em>Water</em> 2021, 13, 1850. <a href="https://doi.org/10.3390/w13131850" target="_blank">https://doi.org/10.3390/w13131850</a></li>
+
+            <li>Hales, R.C.C.; Nelson, E.J.J.; Williams, G.P.P.; Jones, N.; Ames, D.P.P.; Jones, J.E.E. "The Grids Python Tool for Querying Spatiotemporal Multidimensional Water Data." <em>Water</em> 2021, 13, 2066. <a href="https://doi.org/10.3390/w13152066" target="_blank">https://doi.org/10.3390/w13152066</a></li>
+
+            <li>Khattar, R., Hales, R., Ames, D. P., Nelson, E. J., Jones, N., & Williams, G. (2021). "Tethys App Store: Simplifying deployment of web applications for the international GEOGloWS initiative." <em>Environmental Modelling & Software</em>, 105227. <a href="https://doi.org/10.1016/j.envsoft.2021.105227" target="_blank">https://doi.org/10.1016/j.envsoft.2021.105227</a></li>
+
+            <li>McStraw, T.C., Pulla, S.T., Jones, N.L., Williams, G.P., David, C.H., Nelson, J.E., and Ames, D.P.. 2021. "An Open-Source Web Application for Regional Analysis of GRACE Groundwater Data and Engaging Stakeholders in Groundwater Management." <em>Journal of the American Water Resources Association</em> 1– 15. <a href="https://doi.org/10.1111/1752-1688.12968" target="_blank">https://doi.org/10.1111/1752-1688.12968</a></li>
+
+            <li>Barbosa, S.A.; Pulla, S.T.; Williams, G.P.; Jones, N.L.; Mamane, B.; Sanchez, J.L. "Evaluating Groundwater Storage Change and Recharge Using GRACE Data: A Case Study of Aquifers in Niger, West Africa." <em>Remote Sens.</em> 2022, 14, 1532. <a href="https://doi.org/10.3390/rs14071532" target="_blank">https://doi.org/10.3390/rs14071532</a></li>
+
+            <li>Nishimura, R.; Jones, N.L.; Williams, G.P.; Ames, D.P.; Mamane, B.; Begou, J. "Methods for Characterizing Groundwater Resources with Sparse In Situ Data." <em>Hydrology</em> 2022, 9, 134. <a href="https://doi.org/10.3390/hydrology9080134" target="_blank">https://doi.org/10.3390/hydrology9080134</a></li>
+
+            <li>Ramirez, S. G., Hales, R. C., Williams, G. P., & Jones, N. L. (2022). "Extending SC-PDSI-PM with neural network regression using GLDAS data and Permutation Feature Importance." <em>Environmental Modelling & Software</em>, 105475. <a href="https://doi.org/10.1016/j.envsoft.2022.105475" target="_blank">https://doi.org/10.1016/j.envsoft.2022.105475</a></li>
+
+            <li>Hales, R. C., Nelson, E. J., Souffront, M., Gutierrez, A. L., Prudhomme, C., Kopp, S., Ames, D. P., Williams, G. P., & Jones, N. L. (2022) "Advancing global hydrologic modeling with the GEOGloWS ECMWF streamflow service." <em>Journal of Flood Risk Management</em>, e12859. <a href="https://doi.org/10.1111/jfr3.12859" target="_blank">https://doi.org/10.1111/jfr3.12859</a></li>
+
+            <li>Ramirez, S.G.; Williams, G.P.; Jones, N.L. (2022) "Groundwater Level Data Imputation Using Machine Learning and Remote Earth Observations Using Inductive Bias." <em>Remote Sens.</em> 2022, 14, 5509. <a href="https://doi.org/10.3390/rs14215509" target="_blank">https://doi.org/10.3390/rs14215509</a></li>
+
+            <li>Jones, J.E.; Hales, R.C.; Larco, K.; Nelson, E.J.; Ames, D.P.; Jones, N.L.; Iza, M. (2023) "Building and Validating Multidimensional Datasets in Hydrology for Data and Mapping Web Service Compliance." <em>Water</em> 2023, 15, 411. <a href="https://doi.org/10.3390/w15030411" target="_blank">https://doi.org/10.3390/w15030411</a></li>
+
+            <li>Ramirez, S.G.; Williams, G.P.; Jones, N.L.; Ames, D.P.; Radebaugh, J. (2023) "Improving Groundwater Imputation through Iterative Refinement Using Spatial and Temporal Correlations from In Situ Data with Machine Learning." <em>Water</em> 2023, 15, 1236. <a href="https://doi.org/10.3390/w15061236" target="_blank">https://doi.org/10.3390/w15061236</a></li>
+
+            <li>Jones, N.L. and Mayo, A.L. (2023), "Urban Thirst and Rural Water – The Saga of the Southern Nevada Groundwater Development Project." <em>Groundwater</em>. <a href="https://doi.org/10.1111/gwat.13364" target="_blank">https://doi.org/10.1111/gwat.13364</a></li>
+
+            <li>Barbosa, S.A.; Jones, N.L.; Williams, G.P.; Mamane, B.; Begou, J.; Nelson, E.J.; Ames, D.P. (2023) "Exploiting Earth Observations to Enable Groundwater Modeling in the Data-Sparse Region of Goulbi Maradi, Niger." <em>Remote Sens.</em> 2023, 15, 5199. <a href="https://doi.org/10.3390/rs15215199" target="_blank">https://doi.org/10.3390/rs15215199</a></li>
+
+            <li>Sanchez Lozano, J. L., Rojas Lesmes, D. J., Romero Bustamante, E. G., Hales, R. C., Nelson, E. J., Williams, G. P., Ames, D. P., Jones, N. L., Gutierrez, A. L., & Cardona Almeida, C. (2025). "Historical simulation performance evaluation and monthly flow duration curve quantile-mapping (MFDC-QM) of the GEOGLOWS ECMWF streamflow hydrologic model." <em>Environmental Modelling & Software</em>, 183, 106235. <a href="https://doi.org/10.1016/j.envsoft.2024.106235" target="_blank">https://doi.org/10.1016/j.envsoft.2024.106235</a></li>
+
+            <li>Stevens, M. D., Ramirez, S. G., Martin, E.-M. H., Jones, N. L., Williams, G. P., Adams, K. H., Ames, D. P., & Pulla, S. T. (2025). "Groundwater Storage Loss in the Central Valley Analysis Using a Novel Method based on In Situ Data Compared to GRACE-Derived Data." <em>Environmental Modelling & Software</em>, 106368. <a href="https://doi.org/10.1016/j.envsoft.2025.106368" target="_blank">https://doi.org/10.1016/j.envsoft.2025.106368</a></li>
+
+            <li>Sowby, R. B., South, A. J., Jones, N. L., Hopkins, E. G., & Ames, D. P. (2025). "More than modelling: Building trust for positive change in water resources management." <em>Environmental Modelling & Software</em>, 106465. <a href="https://doi.org/10.1016/j.envsoft.2025.106465" target="_blank">https://doi.org/10.1016/j.envsoft.2025.106465</a></li>
+
+            <li>Shepard, D., Jones, N. L., & Williams, G. P. (2025). "Application of the Groundwater Data Mapper Tool to Assess Storage Changes in a Groundwater-Driven Basin in the Klamath Watershed, Oregon, USA." <em>Hydrology</em>, 12(6), Article 6. <a href="https://doi.org/10.3390/hydrology12060140" target="_blank">https://doi.org/10.3390/hydrology12060140</a></li>
+
+            <li>Miskin, T. J., Rosas, L. R., Hales, R. C., Nelson, E. J., Follum, M. L., Gutenson, J. L., Williams, G. P., & Jones, N. L. (2025). "Impact of Elevation and Hydrography Data on Modeled Flood Map Accuracy using ARC and Curve2Flood." <em>Hydrology</em>, 12(8), Article 8. <a href="https://doi.org/10.3390/hydrology12080202" target="_blank">https://doi.org/10.3390/hydrology12080202</a></li>
+
+            <li>Barbosa, S. A., Jones, N. L., Williams, G. P., Teklu, H., Yidana, S. M., Pulla, S. T., Sanchez, J. L., Nelson, E. J., Ames, D. P., & Miller, A. W. (2025). "A multi-source approach to groundwater storage and recharge assessment in the Volta Basin." <em>Science of The Total Environment</em>, 1001, 180421. <a href="https://doi.org/10.1016/j.scitotenv.2025.180421" target="_blank">https://doi.org/10.1016/j.scitotenv.2025.180421</a></li>
+
+            <li>Markert, K., Williams, G. P., Jones, N. L., Sowby, R. B., & Morgan, G. R. (2025). "Assessing Coniferous Forest Cover Change and Associated Uncertainty in a Subbasin of the Great Salt Lake Watershed: A Stochastic Approach Using Landsat Imagery and Random Forest Models." <em>Environments</em>, 12(10), 387. <a href="https://doi.org/10.3390/environments12100387" target="_blank">https://doi.org/10.3390/environments12100387</a></li>
+
+            <li>Aghababaei, A., Jones, N. L., Williams, G. P., Webster-Esho, E., van der Heijden, R., Li, X., Clement, T. P., & Rizzo, D. M. (2025). "Development and Comparison of Methods for Identification of Baseflow-Dominant Periods in Streamflow Records." <em>Water</em>, 17(21), 3083. <a href="https://doi.org/10.3390/w17213083" target="_blank">https://doi.org/10.3390/w17213083</a></li>
+
+            <li>Miller, A. W., Wagle, P., Aghababaei, A., Chapagain, A. R., Baaniya, Y., Oldham, P. D., Oldham, S. J., Peterson, T., Prince, L., Magoffin, R. H., Li, X., Miskin, T., Tanner, K. B., Cardall, A. C., Jones, N. L., Williams, G. P., Miller, A. W., Wagle, P., Aghababaei, A., … Williams, G. P. (2025). "Grand Teton National Park Trophic State Evolution at 33 Locations in 29 Lakes over Three Decades: Field Data and Analysis." <em>Hydrology</em>, 12(12). <a href="https://doi.org/10.3390/hydrology12120321" target="_blank">https://doi.org/10.3390/hydrology12120321</a></li>
+          </ol>
+        </details>
+      </section>
+
+      <section>
+        <h2>Books, Technical Manuals &amp; Reports</h2>
+        <p>
+          Author or co-author of <strong>38 technical manuals, reference guides, and reports</strong> spanning
+          groundwater modeling software documentation, regional groundwater studies, and methodological frameworks.
+        </p>
+
+        <details open>
+          <summary>Show All Books, Manuals & Reports</summary>
+          <ol class="list-publications">
+            <li>Jones, N.L. (1992). <em>FastTABS Reference Manual</em>. Engineering Computer Graphics Laboratory, Brigham Young University. 150 pp.</li>
+
+            <li>Jones, N.L. (1992). <em>FastTABS Tutorials</em>. Engineering Computer Graphics Laboratory, Brigham Young University. 85 pp.</li>
+
+            <li>Jones, N.L. & D.R. Richards. (1993). <em>RMA-2 Primer</em>. U.S. Army Engineer Waterways Experiment Station. 165 pp.</li>
+
+            <li>Jones, N.L. (1994). <em>GMS v1.0 Reference Manual</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 300 pp.</li>
+
+            <li>Jones, N.L. (1994). <em>GMS v1.0 Tutorials</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 175 pp.</li>
+
+            <li>Jones, N.L. (1996). <em>GMS v2.0 Reference Manual</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 350 pp.</li>
+
+            <li>Jones, N.L. (1996). <em>GMS v2.0 Tutorials</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 200 pp.</li>
+
+            <li>Jones, N.L. (1997). <em>GMS v2.1 Reference Manual</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 425 pp.</li>
+
+            <li>Jones, N.L. (1997). <em>GMS v2.1 Tutorials</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 230 pp.</li>
+
+            <li>Lin, H.C., D.R. Richards, C.A. Talbot, G.T. Yeh, H.P. Cheng, N.L. Jones. (1997). <em>FEMWATER (version 2.0): A Three-Dimensional Finite Element Computer Model for Simulating Density-Dependent Flow and Transport in Variably Saturated Media</em>. Technical Report CHL-97-12, U.S. Army Engineer Waterways Experiment Station. 151 pp.</li>
+
+            <li>T.P. Clement & N.L. Jones. (1998). <em>RT3D Tutorials for GMS v3.0 Users</em>. Battelle Pacific Northwest National Lab, Hanford, Washington. 99 pp.</li>
+
+            <li>Jones, N.L. (1999). <em>GMS v3.0 Reference Manual</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 584 pp.</li>
+
+            <li>Jones, N.L. (1999). <em>GMS v3.0 Tutorials</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 261 pp.</li>
+
+            <li>Jones, N.L. (1999). <em>GMS v3.0 File Formats</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 94 pp.</li>
+
+            <li>Jones, N.L. (1999). <em>SEEP2D Primer</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 94 pp.</li>
+
+            <li>Richards, H.C. Lin, H.P. Cheng, C.A. Talbot, & N.L. Jones. (2000). <em>Development of a multidimensional hydroinformatic system for simulating canal, overland, and groundwater flow in South Florida</em>. US Army Engineer Waterways Experiment Station, Vicksburg, Mississippi. 350 pp.</li>
+
+            <li>Jones, N.L. (2000). <em>GMS v3.1 HTML Help Document</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>Jones, N.L. (2000). <em>GMS v3.1 Tutorials</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 313 pp.</li>
+
+            <li>T.P. Clement & N.L. Jones. (2000). <em>RT3D Tutorials for GMS v3.1 Users</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah. 97 pp.</li>
+
+            <li>N.L. Jones. (2000). <em>Ground Water Modeling with GMS Training Manual</em>. EMS-I, Provo, Utah.</li>
+
+            <li>N.L. Jones. (2000). <em>Advanced Ground Water Modeling with GMS Training Manual</em>. EMS-I, Provo, Utah.</li>
+
+            <li>Lin, H.C., D.R. Richards, C.A. Talbot, G.T. Yeh, H.P. Cheng, & N.L. Jones. (2001). <em>FEMWATER: A Three-Dimensional Finite Element Computer Model for Simulating Density-Dependent Flow and Transport in Variably Saturated Media, Version 3.0</em>. Technical Report CHL-01-??, U.S. Army Engineer Waterways Experiment Station. 153 pp.</li>
+
+            <li>EMRL. (2002). <em>Groundwater Modeling System (GMS) version 4.0 Help File</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>EMRL. (2002). <em>Groundwater Modeling System (GMS) version 4.0 Tutorial Documents, Volumes 1-4</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>EMRL. (2004). <em>Groundwater Modeling System (GMS) version 5.0 Help File</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>EMRL. (2004). <em>Groundwater Modeling System (GMS) version 5.0 Tutorial Documents, Volumes 1-4</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>EMRL. (2004). <em>XMDF User Manual</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>EMRL. (2005). <em>Groundwater Modeling System (GMS) version 6.0 Help File</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>EMRL. (2005). <em>Groundwater Modeling System (GMS) version 6.0 Tutorial Documents, Volumes 1-4</em>. Environmental Modeling Research Laboratory, Brigham Young University, Provo, Utah.</li>
+
+            <li>EMRL. (2010). <em>South Florida RSM Peer Review Report</em>.</li>
+
+            <li>Aquaveo LLC. (2010). <em>Sacramento Regional Model Groundwater Modeling Report</em>. Provo, Utah.</li>
+
+            <li>Clement, T.P., M.O. Barnett, C. Zheng, & N.L. Jones. (2010). <em>Development of Modeling Methods and Tools for Predicting Coupled Reactive Transport Processes in Porous Media at Multiple Scales</em>. Auburn University.</li>
+
+            <li>Strassberg, G., N. Jones, & D. Maidment. (2011). <em>Arc Hydro Groundwater: GIS for Hydrology</em>. ESRI Press, Redlands, California. 250 pp.</li>
+
+            <li>Jones, N. & A. Mayo. (2011). <em>Impact on Proposed SNWA Wells on CPB Water Rights in Northern Spring Valley, Nevada</em>. Aquaveo LLC. 124 pp.</li>
+
+            <li>Fan, Y., S. Richard, R.S. Bristol, S.E. Peters, S.E. Ingebritsen, N. Moosdorf, A. Packman, T. Gleeson, I. Zaslavsky, S. Peckham, L. Murdoch, M. Fienen, M. Cardiff, D. Tarboton, N. Jones, R. Hooper, J. Arrigo, D. Gochis, J. Olson, & D. Wolock. (2016). <em>DigitalCrust - a 4D data system of material properties for transforming research on crustal fluid flow</em>. In T. Gleeson & S. Ingebritsen (Eds.), <em>Crustal Permeability</em>. Wiley-Blackwell. 472 pp.</li>
+
+            <li>Jones, N.L. & A.L. Mayo. (2017). <em>Sustainability of the SNWA Pumping Project in Spring Valley, Nevada</em>. Aquaveo LLC, Provo, Utah. 46 pp.</li>
+
+            <li>Jones, N.L. & A.L. Mayo. (2017). <em>Response to June 30, 2017 SNWA Exhibits Related to Spring Valley</em>. Aquaveo LLC, Provo, Utah. 38 pp.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section>
+        <h2>Conference Proceedings &amp; Papers</h2>
+        <p>
+          Author or co-author of <strong>84 conference proceedings and papers</strong> presented at national and international conferences.
+        </p>
+
+        <details open>
+          <summary>Show All Conference Proceedings & Papers</summary>
+          <ol class="list-publications">
+            <li>Jones, N.L., S.G. Wright, R. Gloyd, & D. Maidment. (1989). "An Algorithm for automated drainage analysis of a triangle-based terrain model." <em>Proceedings of the First International Conference on Applications of Advanced Technology in Transportation Engineering</em>, San Diego, California, February 5-8.</li>
+
+            <li>Richards, D.R., N.L. Jones, & H.C. Lin. (1991). "Graphical innovations in surface water flow analysis." <em>First International Conference on Integrating Geographic Information Systems and Environmental Modelling</em>, September 15-19, Boulder, Colorado.</li>
+
+            <li>Jones, N.L. & S.G. Wright. (1991). "Solid modeling for site representation in geotechnical engineering." <em>Geotechnical Engineering Congress</em>, June, 1021-1031.</li>
+
+            <li>Lin, H.C., N.L. Jones, & D.R. Richards. (1991). "A microcomputer-based system for two-dimensional flow modelling." <em>Proceedings of the ASCE 1991 National Conference on Hydraulic Engineering and International Symposium on Ground Water</em>, Nashville, Tennessee, July 29–August 2.</li>
+
+            <li>Nelson, J. & N.L. Jones. (1992). "Drainage analysis using triangulated irregular networks." <em>ASCE 8th Conference on Computing in Civil Engineering - Symposium on Geographic Information Analysis</em>, June 7-9, Dallas, Texas.</li>
+
+            <li>Jones, N.L. & J. Nelson. (1992). "Automated delineation of catchment area boundaries with TINs." <em>ASCE Water Forum 1992</em>, August 3-5, Baltimore, Maryland.</li>
+
+            <li>Lin, H.C., N.L. Jones, & D.R. Richards. (1992). "Multitasking application of surface water flow modeling." <em>ASCE Water Forum 1992</em>, August 3-5, Baltimore, Maryland.</li>
+
+            <li>Jones, N.L. & J. Nelson. (1992). "Geoscientific modeling with TINs." <em>GeoByte</em>, August, 44-49.</li>
+
+            <li>Talbot, C., N.L. Jones, & A.W. Miller. (1993). "Floodplain delineation with TINs." <em>Proceedings of the Fifth International Conference on Computing in Civil Engineering</em>, Anaheim, California, June 7-9.</li>
+
+            <li>Nelson, J., N.L. Jones, & A.W. Miller. (1993). "Integrated hydrologic simulation with TINs." <em>Advances in Hydroscience and Engineering, Volume 1, Proceedings of the First International Conference on Hydro-Science and Engineering</em>, Washington, D.C., June 7-11, 571-578.</li>
+
+            <li>Jones, N.L. & T. Saito. (1993). "Flow animation techniques for two-dimensional hydrodynamic modeling." <em>Advances in Hydroscience and Engineering, Volume 1, Proceedings of the First International Conference on Hydro-Science and Engineering</em>, Washington, D.C., June 7-11, 2091-2096.</li>
+
+            <li>Jones, N.L. & E.J. Nelson. (1993). "Construction of TINs from borehole data." <em>Advances in Site Characterization: Data Acquisition, Data Management, and Data Interpretation</em>, ASCE Geotechnical Publication No. 37, 13-26.</li>
+
+            <li>Christiansen, H.C., T.W. Sederberg, N.L. Jones, A.K. Zundel, & S.E. Benzley. (1993). "The academic role of the Engineering Computer Graphics Laboratory of Brigham Young University." <em>EduGraphics '93</em>, Alvor, Algarve, Portugal, December 5-10, 12-20.</li>
+
+            <li>Jones, N.L. & D.R. Richards. (1994). "A comprehensive modeling environment." <em>Proceedings of the First International Conference on HYDROINFORMATICS</em>, Delft, the Netherlands, September 19-23, 317-322.</li>
+
+            <li>Jones, N.L., D.R. Richards, & J.P. Holland. (1994). "The Department of Defense groundwater modeling system." <em>Geotechnical Engineering News</em>, 12(2), 41-44.</li>
+
+            <li>Richards, D.R., N.L. Jones, & J.P. Holland. (1994). "Department of Defense Groundwater Modeling System." <em>Proceedings of the 1994 Groundwater Modeling Conference</em>, August 10-12, 277-284.</li>
+
+            <li>Lin, H.C., G.T. Yeh, N.L. Jones, & D.R. Richards. (1994). "A state-of-the-art tool for studying sea water intrusion problems in coastal aquifers." <em>Proceedings of the 26th Midatlantic Industrial and Hazardous Waste Conference</em>, Newark, Delaware, August 7-10.</li>
+
+            <li>Jones, N.L., S.J. Owen, & E.C. Perry. (1995). "Plume characterization with natural neighbor interpolation." <em>GEOENVIRONMENT 2000</em>, ASCE Geotechnical Special Publication No. 46, 331-345.</li>
+
+            <li>Nelson, J., A.W. Miller, & N.L. Jones. (1995). "A TIN based watershed delineation technique for both rural and urban runoff." <em>Water in the 21st Century: Conservation, Demand, and Supply, American Water Resources Association</em>, Salt Lake City, Utah, April, 643-652.</li>
+
+            <li>Jones, N.L., D.R. Richards, & R.A. Evans. (1995). "A graphical environment for three-dimensional finite element groundwater modeling." <em>Groundwater Management, Proceedings of the International Symposium</em>, ASCE, San Antonio, Texas, August 14-16, 373-378.</li>
+
+            <li>Jones, N.L., A.K. Zundel, & R.M. Wallace. (1995). "A comprehensive graphical environment for surface water flow modeling." <em>Water Resources Engineering, Proceedings of the First International Conference</em>, ASCE, San Antonio, Texas, August 14-16, 405-409.</li>
+
+            <li>Nelson, E.J., N.L. Jones, & J.D. Jorgeson. (1995). "A comprehensive environment for watershed modeling and hydrologic analysis." <em>Water Resources Engineering, Proceedings of the First International Conference</em>, ASCE, San Antonio, Texas, August 14-16, 829-833.</li>
+
+            <li>Alan K. Zundel & N.L. Jones. (1996). "An integrated surface water modeling system." <em>Proceedings of the Second International Conference on HYDROINFORMATICS</em>, Zurich, Switzerland, September 9-13.</li>
+
+            <li>N.L. Jones & D.R. Richards. (1996). "A conceptual model approach to hydroinformatics." <em>Proceedings of the Second International Conference on HYDROINFORMATICS</em>, Zurich, Switzerland, September 9-13.</li>
+
+            <li>D.R. Richards & N.L. Jones. (1996). "A blueprint for hydroinformatic design of US Army hydrologic models." <em>Proceedings of the Second International Conference on HYDROINFORMATICS</em>, Zurich, Switzerland, September 9-13.</li>
+
+            <li>Jones, N.L., E.V. Edris Jr., & M.J. Kennard. (1996). "Three-dimensional characterization of contaminant plumes using cone penetrometer data." <em>Proceedings of the Second International Conference on Environmental Geotechnics, IS-Osaka '96</em>, November 5-8, Osaka, Japan.</li>
+
+            <li>Nelson, E.J. & N.L. Jones. (1996). "Using the ARC/INFO data model to build conceptual models for environmental/hydraulic/hydrologic simulations." <em>Proceedings of the 1996 ESRI User Conference</em>, May 20-24.</li>
+
+            <li>Nelson, E.J. & N.L. Jones. (1996). "Automated tools for spatially distributed rainfall/runoff modeling." <em>Proceedings of the ASCE North American Water and Environment Congress</em>, Anaheim, California, June 22-28.</li>
+
+            <li>Richards & N.L. Jones. (1996). "The DoD Groundwater Modeling System: a conceptual model approach." <em>Proceedings of the ASCE North American Water and Environment Congress</em>, Anaheim, California, June 22-28.</li>
+
+            <li>Zundel & N.L. Jones. (1996). "A graphical environment for multi-dimensional surface water modeling." <em>Proceedings of the ASCE North American Water and Environment Congress</em>, Anaheim, California, June 22-28.</li>
+
+            <li>N.L. Jones & R.J. Davis. (1996). "Three-Dimensional Characterization of Contaminant Plumes." <em>1996 Meeting of the Transportation Research Board</em>, Washington, D.C., January 7-11.</li>
+
+            <li>Nelson, N.L. Jones, & C. Smemoe. (1997). "From a grid or coverage to a hydrograph: unlocking your GIS data for hydrologic applications." <em>1997 ESRI User Group Conference</em>.</li>
+
+            <li>Richards & N.L. Jones. (1997). "A conceptual modeling approach to modeling groundwater with GMS." <em>Proceedings of the ASCE Water Resources Conference</em>, San Francisco, California.</li>
+
+            <li>Jones, N.L., E.V. Edris Jr. (1998). "Calibration tools for hydroinformatics systems." <em>Proceedings of the Third International Conference on HYDROINFORMATICS</em>, Copenhagen, Denmark, August 24-26.</li>
+
+            <li>Zundel, A.K., Z. Demirbilek, A.L. Fugal, & N.L. Jones. (1998). "Automatic definition of two-dimensional finite element coastal models." <em>Proceedings of the Third International Conference on HYDROINFORMATICS</em>, Copenhagen, Denmark, August 24-26.</li>
+
+            <li>N.L. Jones, E.V. Edris Jr., & E. Poeter. (1998). "Utilizing GIS objects for flux calibration." <em>Proceedings of the MODFLOW 98 Conference</em>, Golden, Colorado, October 5-8.</li>
+
+            <li>Kennard, M., J. Holland, & N. Jones. (1998). "GIS tools in GMS – a state of the art report." <em>Proceedings of the MODFLOW 98 Conference</em>, Golden, Colorado, October 5-8.</li>
+
+            <li>Davis, R.J., N.L. Jones, & T.P. Clement. (1998). "Efficient tools for building multi-component transport models." <em>Proceedings of the MODFLOW 98 Conference</em>, Golden, Colorado, October 5-8.</li>
+
+            <li>Lin, H.C., C.A. Talbot, D.R. Richards, E.V. Edris Jr., H.P. Cheng, N.L. Jones, & G.T. Yeh. (2000). "Development of a multidimensional hydroinformatic system for simulating canal, overland, and groundwater flow in South Florida." <em>Proceedings of the International Conference on Hydroinformatics 2000</em>, July 23-27, Iowa City, Iowa.</li>
+
+            <li>Jones, N.L., A.M. Lemon, & C. Talbot. (2000). "Integrating GIS Data with 3D Finite Element Groundwater Models." <em>Proceedings of the International Symposium 2000 on Groundwater IAHR</em>, Saitama, Japan, May 8-10.</li>
+
+            <li>Green, J.I. & N.L. Jones. (2001). "Tools for stochastic simulations in GMS." <em>Proceedings of the MODFLOW 2001 and Other Modeling Odysseys Conference</em>, Golden, Colorado, September 11-14.</li>
+
+            <li>Lemon, A.M. & N.L. Jones. (2001). "Managing complex stratigraphy in MODFLOW models." <em>Proceedings of the MODFLOW 2001 and Other Modeling Odysseys Conference</em>, Golden, Colorado, September 11-14.</li>
+
+            <li>Jones, N.L. (2001). "Using the Woburn case as a teaching tool." <em>Proceedings of the MODFLOW 2001 and Other Modeling Odysseys Conference</em>, Golden, Colorado, September 11-14.</li>
+
+            <li>Jones, N.L. (2002). "Using transition probability geostatistics with MODFLOW." <em>Calibration and Reliability in Groundwater Modelling: A Few Steps Closer to Reality, Proceedings of ModelCARE 2002</em>, Prague, Czech Republic, June 17-20, IAHS Publication No. 277, 359-364.</li>
+
+            <li>Jones, N.L., J.I. Green, & J.R. Walker. (2003). "Stochastic inverse modeling for capture zone analysis." <em>Groundwater Quality Modeling and Management Under Uncertainty, Proceedings of the Symposium</em>, EWRI Congress, Philadelphia, PA, June 23-26, 1-12.</li>
+
+            <li>Talbot, C.A., C.M. Hansen, N.L. Jones, & E.V. Edris. (2003). "GMS 4.0: New Modeling Tools For Stratigraphic and Stochastic Modeling and Uncertainty Analysis." <em>Watershed Systems Conference</em>, Portland, Oregon, May 13-15.</li>
+
+            <li>Quezada, C., C.M. Hansen, T.P. Clement, N.L. Jones, & K.K. Lee. (2003). "ART3D: an analytical model for predicting 3-dimensional reactive transport." <em>MODFLOW and More 2003: Understanding through Modeling – Conference Proceedings</em>, Colorado School of Mines, September 16-19, 275-279.</li>
+
+            <li>Lemon, A., N.L. Jones, & J. Greer. (2003). "A horizons-based approach to modeling complex geology." <em>MODFLOW and More 2003: Understanding through Modeling – Conference Proceedings</em>, Colorado School of Mines, September 16-19, 666-670.</li>
+
+            <li>N.L. Jones, R.D. Jones, C.D. Butler, & R.M. Wallace. (2004). "A Generic Format for Multi-Dimensional Models." <em>Proceedings of the Groundwater Symposium, EWRI '04 World Water & Environmental Resources Congress</em>, ASCE, Salt Lake City, Utah, June 27–July 1.</li>
+
+            <li>N.L. Jones & A.M. Lemon. (2005). "Efficient Data Management Strategies for Large MODFLOW Models." <em>EWRI '05 World Water & Environmental Resources Congress</em>, ASCE, Anchorage, Alaska, May 15-19.</li>
+
+            <li>D.R. Maidment, N.L. Jones, & G. Strasberg. (2005). "Arc Hydro Groundwater Data Model." <em>IGWMC Newsletter</em>, Spring. http://www.mines.edu/igwmc/news/spring05news.pdf</li>
+
+            <li>Mark Kram, G. Robbins, R. Zhang, L. Liu, & N. Jones. (2006). "Detailed Hydraulic Assessment Using a High-Resolution Piezocone Coupled to the GEOVIS." <em>Proceedings of the 2006 North American Environmental Field Conference and Exposition</em>, University of South Florida, Tampa, Florida, January 10-12.</li>
+
+            <li>Aaron Byrd, R. Wallace, C. Butler, N. Jones, & R. Jones. (2006). "Generic model data format." <em>Proceedings of the 3rd Federal Interagency Hydrologic Modeling Conference</em>, Reno, Nevada, April 2-6.</li>
+
+            <li>Strasberg, G., N.L. Jones, & D. Maidment. (2006). "The Arc Hydro ground water data model." <em>MODFLOW & More 2006 – Managing Ground-Water Systems</em>, Golden, Colorado, May 22-24.</li>
+
+            <li>Jones, N.L. & J. Greer. (2006). "Automated 3D meshing of hydrogeologic units." <em>MODFLOW & More 2006 – Managing Ground-Water Systems</em>, Golden, Colorado, May 22-24.</li>
+
+            <li>Kram, M., N. Jones, J. Chau, G. Robbins, & A. Bagtzoglou. (2008). "Mass flux distribution using the high-resolution piezocone and GMS." <em>Remediation of Chlorinated and Recalcitrant Compounds, The Sixth International Conference</em>, Monterrey, California, May 19-22.</li>
+
+            <li>Jones, N. & G. Strassberg. (2008). "A GIS-based MODFLOW data model." <em>MODFLOW & More 2008: Ground Water and Public Policy</em>, Golden, Colorado, May 19-21.</li>
+
+            <li>Lemon, A., N. Jones, & M. Kennard. (2008). "Efficient storage of massive MODFLOW simulations." <em>MODFLOW & More 2008: Ground Water and Public Policy</em>, Golden, Colorado, May 19-21.</li>
+
+            <li>Williams, G., N. Jones, T. Winkel, & A. Mayo. (2008). "Field description and multi-phase modeling of a naturally occurring inverted density groundwater interface." <em>Proceedings of the American Society of Civil Engineers (ASCE) Environmental and Water Resources Institute</em>, Honolulu, Hawaii, May.</li>
+
+            <li>Williams, G., N. Jones, T. Winkel, & A. Mayo. (2008). "Field measurements and an osmotic conceptual model of a steady-state groundwater pressure ridge." <em>Proceedings of the American Society of Civil Engineers (ASCE) Environmental and Water Resources Institute</em>, Honolulu, Hawaii, May.</li>
+
+            <li>Jones, N.L., R.M. Wallace, & J.R. Handy. (2008). "Levee Analyst: A GIS-based levee modeling and management system." <em>Proceedings of the Association of State Dam Safety Officials Annual Conference 2008</em>, Indian Wells, California, September 7-11.</li>
+
+            <li>Gustavious P. Williams, N. Jones, & J. Handy. (2009). "A Heuristic Algorithm for Optimal Alignment and Matching of Borehole Stratigraphy." <em>Proceedings of the ASCE Environmental and Water Resources Institute 2008 Conference</em>, Kansas City, Kansas, May.</li>
+
+            <li>N.L. Jones, A. Lemon, & R. Patton. (2010). "Automated well permitting in a coastal region using SEAWAT and ArcGIS." <em>SWIM21 - 21st Salt Water Intrusion Meeting</em>, Azores, Portugal, June 21-26, 187-190.</li>
+
+            <li>Jones, N.L., G. Strassberg, & A.M. Lemon. (2010). "Automated Well Permitting via GIS Geoprocessing Tools." <em>EWRI World Environmental & Water Resources Congress 2010: Challenges of Change</em>, Providence, Rhode Island, May 16-20.</li>
+
+            <li>Jones, N., A. Lemon, & D. Gallup. (2010). "Automated well permitting using Arc Hydro Groundwater." <em>AWRA 2010 Spring Specialty Conference</em>, Orlando, Florida, March 29-31.</li>
+
+            <li>Whiteaker, T., N. Jones, G. Strassberg, & D. Gallup. (2010). "Hydrogeologic site characterization via cross section editing." <em>AWRA 2010 Spring Specialty Conference</em>, Orlando, Florida, March 29-31.</li>
+
+            <li>Smilowitz, M., N. Jones, & D. Whitehead. (2010). "Application of Arc Hydro Groundwater to the Sacramento regional model." <em>AWRA 2010 Spring Specialty Conference</em>, Orlando, Florida, March 29-31.</li>
+
+            <li>Jones, N. & G. Strassberg. (2010). "The Arc Hydro Groundwater Data Model and Tools." <em>AWRA 2010 Spring Specialty Conference</em>, Orlando, Florida, March 29-31.</li>
+
+            <li>Jones, N.L., M. Smilowitz, & D. Whitehead. (2011). "The Sacramento Regional Groundwater Model." <em>World Environmental & Water Resources Congress 2011</em>, Palm Springs, California, May 22-26.</li>
+
+            <li>Lemon, A., N.G. Strassberg, N. Jones, & T. Whitaker. (2011). "3D Characterization of Hydrogeology Using ArcGIS." <em>MODFLOW and More 2011 - Integrated Hydrologic Modeling</em>, Golden, Colorado, June 5-8, 662-666.</li>
+
+            <li>Jones, N., G. Strassberg, & D. Gallup. (2011). "MODFLOW Scripting via ArcGIS Geoprocessing Tools." <em>MODFLOW and More 2011 - Integrated Hydrologic Modeling</em>, Golden, Colorado, June 5-8, 657-661.</li>
+
+            <li>Swain, N.R., S.D. Christensen, A.D. Snow, H. Dolder, G. Espinoza-Dávalos, E. Goharian, N.L. Jones, E.J. Nelson, D.P. Ames, & S.J. Burian. (2013). "A Geospatial Relational Data Model for Ingesting GSSHA Computational Models: A Step Toward Two-Dimensional Hydrologic Modeling in the Cloud." <em>World Environmental and Water Resources Congress 2013</em>, 2716-2725. <a href="https://doi.org/10.1061/9780784412947.269" target="_blank">https://doi.org/10.1061/9780784412947.269</a></li>
+
+            <li>Latu, K., N.R. Swain, S.D. Christensen, N.L. Jones, J.E. Nelson, & G.P. Williams. (2013). "Essential GIS Technologies for Hydrologic Simulation Applications in Cloud Computing." <em>World Environmental & Water Resources Congress</em>, Cincinnati, Ohio.</li>
+
+            <li>Jones, N.L., E.J. Nelson, G.P. Williams, F. Ogden, D. Tarboton, & S. Burian. (2013). "CI-WATER: Cyberinfrastructure to Advance High Performance Water Resource Modeling." <em>World Environmental & Water Resources Congress</em>, Cincinnati, Ohio.</li>
+
+            <li>Christensen, S.D., M. Burns, G. Strassberg, & N.L. Jones. (2013). "A Web-Based Groundwater Mapping and Visualization Tool Using Google Earth." <em>World Environmental & Water Resources Congress</em>, Duke Energy Convention Center, Cincinnati, Ohio.</li>
+
+            <li>Christensen, S.D., N.L. Jones, M. Burns, & G. Strassberg. (2013). "A Web-Based Groundwater Mapping and Visualization Tool Using Google Earth." <em>MODFLOW and More 2013: Translating Science into Practice</em>, Integrated Groundwater Modeling Center, Colorado School of Mines, Golden, Colorado.</li>
+
+            <li>N.L. Jones & A. Mayo. (2013). "Debating the Long Term Impact of the Nevada Pumping Project." <em>MODFLOW and More 2013: Translating Science into Practice</em>, Integrated Groundwater Modeling Center, Colorado School of Mines, Golden, Colorado.</li>
+
+            <li>Jones, N., E.J. Nelson, N. Swain, S. Christensen, D. Tarboton, & P. Dash. (2014). "Tethys: A Software Framework for Web-Based Modeling and Decision Support Applications." <em>Proceedings of the 7th International Congress on Environmental Modelling and Software</em>, San Diego, California, June 15-19, ISBN 978-88-9035-744-2.</li>
+
+            <li>Jones, N., T. Griffiths, A. Lemon, & S. Kudlas. (2014). "Automated Well Permitting in Virginia's Coastal Plain Using SEAWAT and GIS Geoprocessing Tools." <em>Proceedings of the 7th International Congress on Environmental Modelling and Software</em>, San Diego, California, June 15-19, ISBN 978-88-9035-744-2.</li>
+
+            <li>Fan, Y., S. Richard, R.S. Bristol, S.E. Peters, S.E. Ingebritsen, N. Moosdorf, A. Packman, T. Gleeson, I. Zaslavsky, S. Peckham, L. Murdoch, M. Fienen, M. Cardiff, D. Tarboton, N. Jones, R. Hooper, J. Arrigo, D. Gochis, J. Olson, & D. Wolock. (2014). "DigitalCrust – a 4D data system of material properties for transforming research on crustal fluid flow." <em>GeoFluids</em>, Article first published online October 7, 2014. <a href="https://doi.org/10.1111/gfl.12114" target="_blank">https://doi.org/10.1111/gfl.12114</a></li>
+
+            <li>David Jones, N. Jones, J. Greer, & J. Nelson. (2015). "A cloud-based MODFLOW service for aquifer management decision support." <em>Computers and GeoSciences</em>, 78, 81-87.</li>
+
+            <li>Dolder, H., N. Jones, & E. Nelson. (2015). "Simple Method for Using Precomputed Hydrologic Models in Flood Forecasting with Uniform Rainfall and Soil Moisture Pattern." <em>J. Hydrol. Eng.</em> <a href="https://doi.org/10.1061/(ASCE)HE.1943-5584.0001232" target="_blank">https://doi.org/10.1061/(ASCE)HE.1943-5584.0001232</a></li>
+
+            <li>Fatichi, S., E.R. Vivoni, F.L. Ogden, V.Y. Ivanov, B. Mirus, D. Gochis, C.W. Downer, M. Camporese, J.H. Davidson, B. Ebel, N. Jones, J. Kim, G. Mascaro, R. Niswonger, P. Restrepo, R. Rigon, C. Shen, M. Sulis, & D. Tarboton. (2016). "An Overview of Challenges, Current Applications and Future Trends of Distributed Process-based Models in Hydrology." <em>Journal of Hydrology</em>, 537, 45-60. <a href="https://doi.org/10.1016/j.jhydrol.2016.03.026" target="_blank">https://doi.org/10.1016/j.jhydrol.2016.03.026</a></li>
+
+            <li>Angelica Gutierrez-Magness, B. Doorn, R. Lawford, C. Garay, N. Jones, I. DeLoatch, & E. Frazier. (2017). "GEO Global Water Sustainability (GEOGLOWS): Earth Observations for sustainability in water management in the Americas and around the world." <em>XVI World Water Congress</em>, Cancun, Quintana Roo, Mexico, May 29–June 2.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section>
+        <h2>References</h2>
+        <p>Professional and academic references available upon request.</p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Jones Geoscience, LLC. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

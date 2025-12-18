@@ -114,6 +114,25 @@
       grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
       gap: 1.5rem;
     }
+    .hero .two-column {
+      grid-template-columns: minmax(0, 1.7fr) 240px;
+      align-items: center;
+    }
+    .hero-photo {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .hero-photo img {
+      display: block;
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--accent-light);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+    /* .profile styles removed */
     .service-list ul,
     .about-list ul {
       margin: 0.5rem 0 0;
@@ -143,6 +162,13 @@
       .two-column {
         grid-template-columns: 1fr;
       }
+      .hero .two-column {
+        grid-template-columns: 1fr;
+      }
+      .hero-photo {
+        justify-content: center;
+        margin-top: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -157,6 +183,7 @@
         <a href="#services">Services</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
+        <a href="cv.html">CV</a>
       </nav>
     </div>
   </header>
@@ -164,22 +191,29 @@
   <div class="container">
     <main>
       <section class="hero" id="top">
-        <h2 class="hero-title">Independent technical expertise for complex subsurface problems.</h2>
-        <p class="hero-subtitle">
-          Jones Geoscience, LLC provides analysis, review, and guidance on groundwater and geotechnical engineering consulting projects for
-          public agencies, consultants, and industry.
-        </p>
-        <ul class="hero-list">
-          <li>Numerical and analytical modeling to support design and decision-making</li>
-          <li>Litigation support, expert witness testimony, and expert reports</li>
-          <li>Independent checks, QA/QC review, and expert input on existing analyses</li>
-          <li>Clear, concise technical communication for engineers, managers, and stakeholders</li>
-        </ul>
-        <div>
-          <span class="pill">Slope stability</span>
-          <span class="pill">Seepage &amp; groundwater</span>
-          <span class="pill">Dam &amp; levee safety</span>
-          <span class="pill">Technical review</span>
+        <div class="two-column">
+          <div>
+            <h2 class="hero-title">Independent technical expertise for complex subsurface problems.</h2>
+            <p class="hero-subtitle">
+              Jones Geoscience, LLC provides analysis, review, and guidance on groundwater and geotechnical engineering consulting projects for
+              public agencies, consultants, and industry.
+            </p>
+            <ul class="hero-list">
+              <li>Numerical and analytical modeling to support design and decision-making</li>
+              <li>Litigation support, expert witness testimony, and expert reports</li>
+              <li>Independent checks, QA/QC review, and expert input on existing analyses</li>
+              <li>Clear, concise technical communication for engineers, managers, and stakeholders</li>
+            </ul>
+            <div>
+              <span class="pill">Slope stability</span>
+              <span class="pill">Seepage &amp; groundwater</span>
+              <span class="pill">Dam &amp; levee safety</span>
+              <span class="pill">Technical review</span>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img src="jones_pic2.jpg" alt="Norman L. Jones" loading="eager" decoding="async">
+          </div>
         </div>
       </section>
 

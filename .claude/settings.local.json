@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.et.byu.edu)",
+      "WebFetch(domain:scholar.google.com)",
+      "WebSearch",
+      "WebFetch(domain:agu.confex.com)",
+      "WebFetch(domain:cce.byu.edu)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
