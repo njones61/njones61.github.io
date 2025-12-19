@@ -176,6 +176,12 @@
     .cv-entry-desc {
       margin-top: 0.5rem;
     }
+    /* Tighten spacing for Consulting Projects date-to-description */
+    .consulting-projects .cv-entry-title { margin-bottom: 0; }
+    .consulting-projects .cv-entry-meta { margin-bottom: 0; }
+    .consulting-projects .cv-entry-desc { margin-top: 0; }
+    .consulting-projects .cv-entry-desc p { margin-top: 0; }
+    .consulting-projects details > .cv-entry:first-of-type { margin-top: 0.5rem; }
     details {
       border: 1px solid var(--accent-light);
       border-radius: 8px;
@@ -471,7 +477,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="consulting-projects">
         <h2>Consulting Projects</h2>
         <p>
           Representative consulting and expert‑witness engagements spanning groundwater modeling, hydroinformatics,
