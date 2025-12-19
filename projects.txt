@@ -1,0 +1,71 @@
+dates: 2003
+client: Lewis & Slovak, P.C.
+project: Provided expert opinion in support of litigation in a groundwater contamination case involving a railroad repair site in Montana. Performed groundwater flow and transport modeling.
+
+dates: 2005
+client: South Florida Water Management District
+project: Served as a member of an external panel of experts to provide a peer review of a new numerical model developed by the District to simulate groudwater/surface water interactions in South Florida.
+
+dates: 2007
+client: JBR Environmental Consultants, Inc
+project: Worked with a team at Environmental Modeling Systems, Inc to develop a groundwater flow and transport model for the Intermountain Power Service Company, Delta, Utah Facility.
+
+dates: 2007
+client: WVU - Natural Resource Analysis Center
+project: Developed training modules related to multiple case studies related to groundwater contamination and coal mines in support of a groundwater modeling workshop.
+
+dates: 2007-2009
+client: JBR Environmental Consultants
+project: Developed a comprehensive groundwater model of the alluvial aquifers in Steptoe Valley, Nevada as part of an environmental impact statement associated with a proposed coal-fired power plant.
+
+dates: 2009
+client: Naval Facilities Engineering Systems Command (NAVFAC)
+project: Prepared and delivered a series of workshops on developing groundwater flow and transport models at naval facilities in Virginia, Washington, Hawaii, and California as part of a Remediation Innovative Technology Seminar series. 
+
+dates: 2009-2011
+client: City of Roseville, California
+project: Developed a groundwater model for the Sacramento region called the Sacramento Regional Model (SRM) for use by the city of Roseville and other water purveyors in the Sacramento region to analyze groundwater flow and predict aquifer behavior in response to a variety of proposed groundwater conservation efforts.
+
+dates: 2009-2011
+client: Virginia Department of Environmental Quality
+project: Developed a GIS and web-based system for automatically reviewing groundwater withdrawal permit applications. The developed system is still in use today.
+
+date: 2010
+client: City of Roseville, California
+project: Developed a local-scale version of the Sacramento Regional Model for use by the city of Roseville for anti-degradation analysis related to water quality at aquifer storage and recovery facilities.
+
+date: 2010
+client: City of Roseville, California
+project: Developed a local-scale version of the Sacramento Regional Model for use by the city of Roseville for to simulate flow and transport associated with the Former City Landfill and Burn Site.
+
+date: 2010
+client: JBR Environmental Consultants
+project: Peer review of a groundwater model developed for the Simplot Dairy Syncline project.
+
+date: 2011-2020
+client: The Cleveland Ranch
+project: Served as the lead expert witness in a water rights case related to the $15B Southern Nevada Groundwater Development project on behalf of a cattle ranch in Spring Valley, Nevada owned by the Church of Jesus Christ of Latter-Day Saints. Based on extensive simulations, provided expert reports and testimony that the proposed project would harm ranch water rights and result in perpetual groundwater mining. Case involved multiple rounds of hearings, court testimony, and appeals involving the State Engineer and the Nevada Seventh District Court. We were ultimately successful in terminating the project. A detailed description of the case can be found here: https://doi.org/10.1111/gwat.13364. 
+
+date: 2012-2013
+client: National Centre of Meteorology & Seismology (NCMS)  - United Arab Emirates
+project: Traveled to the UAE to make presentations to the water ministry on groundwater modeling and groundwater sustainability analysis. Prepared a series of local groundwater models in the Al Qor watershed. 
+
+date: 2013
+client: City of Roseville, California
+project: Oversaw the development of an update to the Sacramento Regional Model. Model was re-calibrated to new field data.
+
+date: 2022-2025
+client: Stillwater Mining Company
+project: Provided peer review analysis of a 3D unstructured groundwater model developed by Hydrometrics, Inc. to simulate/predict the impact on surface water ecosystems of a new development at the Stillwater platinum mine.
+
+date: 2022-2024
+client: United Nations Economic and Social Commission for West Africa (ESCWA)
+project: Assisted the UN-ESCWA office in developing a web-based system for groundwater storage change analysis using remote sensing data from the NASA GRACE mission. Provided training/capacity building workshops in Egypt and Jordan. 
+
+date: 2024-2025
+client: Bell Legal Group
+project: Provided export reports and testimony related to groundwater flow and contaminant transport at the Camp Lejeune Marine base in North Carolina associated with the Camp Lejeune Justice Act (CLJA) litigation. Performed a post-audit of a flow and transport model of the Tarawa Terrace site within the camp. 
+
+date: 2024-2025
+client: MarcorSEN Engineering
+project: Developed an analytical model to simulate water table changes due to a leaking irrigation pipe in relation to litigation associated with the flooding of a nearby property. 
